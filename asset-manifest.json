@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/small-store/static/css/main.7bab0ae9.css",
+    "main.js": "/small-store/static/js/main.810c1b56.js",
+    "static/media/single-sofa-01.png": "/small-store/static/media/single-sofa-01.eb592c0a252ddf5bbe4f.png",
+    "static/media/arm-chair-03.png": "/small-store/static/media/arm-chair-03.ff7903d44f19895b6efe.png",
+    "static/media/single-sofa-03.png": "/small-store/static/media/single-sofa-03.6312baf59087f6652b3e.png",
+    "static/media/single-sofa-04.png": "/small-store/static/media/single-sofa-04.a6776446dc44611eae4d.png",
+    "static/media/arm-chair-02.png": "/small-store/static/media/arm-chair-02.dfd62bf0f451219928c2.png",
+    "static/media/arm-chair-01.png": "/small-store/static/media/arm-chair-01.b7bc12b7c8288d2dc94c.png",
+    "static/media/single-sofa-02.png": "/small-store/static/media/single-sofa-02.4e795c6a9804470da39c.png",
+    "static/media/double-sofa-3.png": "/small-store/static/media/double-sofa-3.eec32ae9415ce69e404b.png",
+    "static/media/double-sofa-1.png": "/small-store/static/media/double-sofa-1.c53541f4836888f2b12d.png",
+    "static/media/double-sofa-2.png": "/small-store/static/media/double-sofa-2.87a98e9d5a84e319f941.png",
+    "static/media/remixicon.svg?t=1705244689813": "/small-store/static/media/remixicon.426742b01cbcdd986634.svg",
+    "static/media/phone-02.png": "/small-store/static/media/phone-02.ddcb9e03df80fd25d288.png",
+    "static/media/watch-01.png": "/small-store/static/media/watch-01.066e1590434241ccbf80.png",
+    "static/media/watch-03.png": "/small-store/static/media/watch-03.4e7c44a1b696140819d3.png",
+    "static/media/phone-06.png": "/small-store/static/media/phone-06.8a521c55d6f524d3cd74.png",
+    "static/media/watch-04.png": "/small-store/static/media/watch-04.27aafa411a35d22aeb8a.png",
+    "static/media/watch-02.png": "/small-store/static/media/watch-02.6b53660432fb8f323ea5.png",
+    "static/media/phone-05.png": "/small-store/static/media/phone-05.8e9a3651d0ea5e3764f7.png",
+    "static/media/remixicon.eot?t=1705244689813": "/small-store/static/media/remixicon.ff1ec9ee899cf84e3449.eot",
+    "static/media/remixicon.ttf?t=1705244689813": "/small-store/static/media/remixicon.f1ed85ba47411bc8629e.ttf",
+    "static/media/phone-04.png": "/small-store/static/media/phone-04.895d116d098002a9475a.png",
+    "static/media/phone-01.png": "/small-store/static/media/phone-01.9a295a4b4eddec4ac961.png",
+    "static/media/clock-bg.jpg": "/small-store/static/media/clock-bg.d0e0d097fc14b6bfb205.jpg",
+    "static/media/hero-bg.jpg": "/small-store/static/media/hero-bg.c418dad4ae3176a1ed95.jpg",
+    "static/media/remixicon.woff?t=1705244689813": "/small-store/static/media/remixicon.85d5afadad2b2c04b2fb.woff",
+    "static/media/hero-img.png": "/small-store/static/media/hero-img.54d7e85a994b38a18e15.png",
+    "static/media/remixicon.woff2?t=1705244689813": "/small-store/static/media/remixicon.7124d0d7809bef5b73ab.woff2",
+    "static/media/phone-03.png": "/small-store/static/media/phone-03.3207c29a5ca1a8cd27cf.png",
+    "static/media/wireless-03.png": "/small-store/static/media/wireless-03.102199ac2c306820fe70.png",
+    "static/media/wireless-01.png": "/small-store/static/media/wireless-01.1a76d777727c50ca0294.png",
+    "index.html": "/small-store/index.html",
+    "main.7bab0ae9.css.map": "/small-store/static/css/main.7bab0ae9.css.map",
+    "main.810c1b56.js.map": "/small-store/static/js/main.810c1b56.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bab0ae9.css",
+    "static/js/main.810c1b56.js"
+  ]
+}
