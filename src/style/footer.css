@@ -1,0 +1,67 @@
+.footer {
+    padding: 60px 0 30px 0;
+    background: var(--card-bg-01);
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.footer__logo-icon {
+    font-size: 48px;
+    line-height: 0;
+    color: var(--accent);
+}
+
+.footer__logo-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--big-text);
+}
+
+.footer__logo-text {
+    color: var(--text);
+}
+
+.footer__text {
+    font-size: 12px;
+    margin-top: 12px;
+    max-width: 300px;
+}
+
+.footer__quick-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__item {
+    font-size: 16px;
+    color: #ffffffb7;
+}
+
+.item-contact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.item-contact span {
+    font-size: 20px;
+}
+
+.footer__copyright {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 30px;
+}
