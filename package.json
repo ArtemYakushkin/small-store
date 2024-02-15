@@ -1,7 +1,7 @@
 {
   "name": "small-store",
   "version": "0.1.0",
-  "homepage": "https://ArtemYakushkin.github.io/small-store",
+  "homepage": "https://ArtemYakushkin.github.io/small-store/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.0",
