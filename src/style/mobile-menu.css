@@ -1,0 +1,36 @@
+.menu {
+    display: none;
+    transform: translateX(-100%);
+}
+
+.menu-open {
+    transform: translateX(0);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background: var(--background);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.mobile__item a {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--big-text);
+}
+
+.menu__active {
+    font-weight: 700 !important;
+    color: var(--accent) !important;
+}

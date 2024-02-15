@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Container, Row } from "reactstrap";
 import { motion } from "framer-motion";
 
 import "../style/timer-count.css";
@@ -42,46 +41,47 @@ const TimerCount = () => {
 
   return (
     <section className="timer">
-      <Container>
-        <Row>
-          <div className="clock__top-content">
-            <h4 className="clock__subtitle">Limited Offers</h4>
-            <h3 className="clock__title">Quality Armchair</h3>
+      <div className="container">
+        <div className="clock__top-content">
+          <div className="clock__subtitle-box">
+            <span className="clock__line"></span>
+            <p className="clock__subtitle">Limited Offers</p>
           </div>
-          <div className="clock__wrapper">
-            <div className="clock__data">
-              <div className="clock__box">
-                <h1 className="clock__number">{days}</h1>
-                <h5 className="clock__leter">Days</h5>
-              </div>
-              <span className="clock__dots">:</span>
+          <h3 className="clock__title">Quality Armchair</h3>
+        </div>
+        <div className="clock__wrapper">
+          <div className="clock__data">
+            <div className="clock__box">
+              <h2 className="clock__number">{days}</h2>
+              <h5 className="clock__leter">Days</h5>
             </div>
-            <div className="clock__data">
-              <div className="clock__box">
-                <h1 className="clock__number">{hours}</h1>
-                <h5 className="clock__leter">Hours</h5>
-              </div>
-              <span className="clock__dots">:</span>
+            <span className="clock__dots">:</span>
+          </div>
+          <div className="clock__data">
+            <div className="clock__box">
+              <h2 className="clock__number">{hours}</h2>
+              <h5 className="clock__leter">Hours</h5>
             </div>
-            <div className="clock__data">
-              <div className="clock__box">
-                <h1 className="clock__number">{minutes}</h1>
-                <h5 className="clock__leter">Minutes</h5>
-              </div>
-              <span className="clock__dots">:</span>
+            <span className="clock__dots">:</span>
+          </div>
+          <div className="clock__data">
+            <div className="clock__box">
+              <h2 className="clock__number">{minutes}</h2>
+              <h5 className="clock__leter">Minutes</h5>
             </div>
-            <div className="clock__data">
-              <div className="clock__box">
-                <h1 className="clock__number">{seconds}</h1>
-                <h5 className="clock__leter">Seconds</h5>
-              </div>
+            <span className="clock__dots">:</span>
+          </div>
+          <div className="clock__data">
+            <div className="clock__box">
+              <h2 className="clock__number">{seconds}</h2>
+              <h5 className="clock__leter">Seconds</h5>
             </div>
           </div>
-          <motion.button whileTap={{ scale: 1.2 }} className="clock__btn">
-            <Link to="/shop">Visit Store</Link>
-          </motion.button>
-        </Row>
-      </Container>
+        </div>
+        <motion.button whileTap={{ scale: 1.2 }} className="clock__btn btn-bay">
+          <Link to="/shop">Visit Store</Link>
+        </motion.button>
+      </div>
     </section>
   );
 };

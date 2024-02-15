@@ -1,0 +1,99 @@
+.filter__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.filter__select-wrap {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.filter__select {
+    width: 100%;
+    padding: 10px 20px;
+    border: 2px solid var(--card-bg-03);
+    background: var(--background);
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--big-text);
+    cursor: pointer;
+}
+
+.filter__option {
+    font-size: 16px;
+}
+
+.filter__search {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.filter__icon {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--big-text);
+}
+
+.filter__input {
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    color: var(--big-text);
+    padding: 7px 20px;
+    border: 2px solid var(--card-bg-03);
+    background: var(--background);
+    border-radius: 5px;
+}
+
+.filter__input::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--big-text);
+}
+
+@media (max-width: 930px) {
+
+    .filter__wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .filter__search {
+        margin-bottom: 20px;
+        width: 75%;
+    }
+
+    .filter__select-wrap {
+        width: 75%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .filter__search {
+        width: 100%;
+    }
+
+    .filter__select-wrap {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .filter__select-wrap {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}

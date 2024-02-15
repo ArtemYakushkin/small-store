@@ -6,25 +6,39 @@
 }
 
 .clock__top-content {
-    margin-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.clock__subtitle-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.clock__line {
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--accent);
 }
 
 .clock__subtitle {
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 6px;
+    letter-spacing: 2px;
+    color: var(--big-text);
 }
 
 .clock__title {
     font-size: 28px;
     font-weight: 600;
+    color: var(--big-text);
 }
 
 .clock__wrapper {
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-bottom: 20px;
 }
 
 .clock__data {
@@ -42,25 +56,20 @@
 .clock__number {
     font-size: 28px;
     font-weight: 700;
+    color: var(--big-text);
 }
 
 .clock__leter {
     font-size: 12px;
+    color: var(--big-text);
 }
 
 .clock__dots {
     font-size: 28px;
     font-weight: 700;
+    color: var(--big-text);
 }
 
 .clock__btn {
-    max-width: 200px;
-    padding: 8px 20px;
-    border-radius: 5px;
-    background: var(--accent);
-    font-size: 20px;
-    font-weight: 600;
-    margin-left: 12px;
+    margin-top: 40px;
 }
-
-@media (max-width: 992px) {}

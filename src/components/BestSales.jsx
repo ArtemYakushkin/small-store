@@ -1,19 +1,14 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
 
 import ProductsList from "./ProductsList";
 
 const BestSales = ({ data }) => {
   return (
     <section className="sales">
-      <Container>
-        <Row>
-          <Col lg="12">
-            <h2 className="section__title">Best Sales</h2>
-          </Col>
-          <ProductsList data={data} />
-        </Row>
-      </Container>
+      <div className="container">
+        <h2 className="section__title">Best Sales</h2>
+        <ProductsList data={data} />
+      </div>
     </section>
   );
 };

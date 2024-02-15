@@ -1,23 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Row, Col } from "reactstrap";
 
 import "../style/footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <Container>
-        <Row>
-          <Col lg="4" md="6" className="mb-4">
+      <div className="container">
+        <div className="footer__wrapper">
+          <div className="footer__logo-wrap">
             <Link to="/home">
-              <div className="footer__logo">
-                <span className="footer__logo-icon">
+              <div className="logo">
+                <span className="logo__icon">
                   <i class="ri-shopping-bag-2-line"></i>
                 </span>
-                <div className="footer__logo-info">
-                  <h1 className="footer__logo-title">SmallStore</h1>
-                  <p className="footer__logo-text">Since 2024</p>
+                <div className="logo__info">
+                  <h1 className="logo__title">SmallStore</h1>
+                  <p className="logo__text">Since 2024</p>
                 </div>
               </div>
             </Link>
@@ -26,9 +25,9 @@ const Footer = () => {
               consectetur cumque dignissimos qui facilis earum fuga maxime,
               pariatur voluptatum dolores!
             </p>
-          </Col>
-          <Col lg="3" md="3" className="mb-4">
-            <div className="footer__quick-links">
+          </div>
+          <div className="footer__center-wrap">
+            <div className="footer__center-col">
               <h4 className="footer__quick-title">Top Categories</h4>
               <ul className="footer__list">
                 <li className="footer__item">
@@ -45,9 +44,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </Col>
-          <Col lg="2" md="3" className="mb-4">
-            <div className="footer__quick-links">
+            <div className="footer__center-col">
               <h4 className="footer__quick-title">Useful Links</h4>
               <ul className="footer__list">
                 <li className="footer__item">
@@ -64,39 +61,37 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </Col>
-          <Col lg="3" md="4" className="mb-4">
-            <div className="footer__quick-links">
-              <h4 className="footer__quick-title">Contact</h4>
-              <ul className="footer__list">
-                <li className="footer__item item-contact">
-                  <span>
-                    <i class="ri-map-pin-line"></i>
-                  </span>
-                  <p>01054 13/2b Yaroslaviv Val st, Kyiv, Ukraine</p>
-                </li>
-                <li className="footer__item item-contact">
-                  <span>
-                    <i class="ri-phone-line"></i>
-                  </span>
-                  <p>+380440000000</p>
-                </li>
-                <li className="footer__item item-contact">
-                  <span>
-                    <i class="ri-mail-line"></i>
-                  </span>
-                  <p>small_shop@gmail.com</p>
-                </li>
-              </ul>
-            </div>
-          </Col>
-          <Col lg="12">
-            <p className="footer__copyright">
-              Copyright 2024 developed by Artem Yakushkin. All rights reserved.
-            </p>
-          </Col>
-        </Row>
-      </Container>
+          </div>
+          <div className="footer__contact-wrap">
+            <h4 className="footer__title-contact">Contact</h4>
+            <ul className="footer__list-contact">
+              <li className="footer__item-contact">
+                <span>
+                  <i class="ri-map-pin-line"></i>
+                </span>
+                <p>01054 13/2b Yaroslaviv Val st, Kyiv, Ukraine</p>
+              </li>
+              <li className="footer__item-contact">
+                <span>
+                  <i class="ri-phone-line"></i>
+                </span>
+                <p>+380440000000</p>
+              </li>
+              <li className="footer__item-contact">
+                <span>
+                  <i class="ri-mail-line"></i>
+                </span>
+                <p>small_shop@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="footer__copyright-box">
+          <p className="footer__copyright">
+            Copyright 2024 developed by Artem Yakushkin. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
   );
 };
