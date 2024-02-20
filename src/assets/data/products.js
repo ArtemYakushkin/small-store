@@ -618,7 +618,7 @@ const products = [
     avgRating: 4.8,
   },
 
-    {
+  {
     id: "25",
     productName: "Beat Studio Wireless",
     imgUrl: productImg23,

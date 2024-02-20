@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
 import "../style/header.css";
 import user from "../assets/images/user-icon.png";
 import MobileMenu from "./MobileMenu";
+import useAuth from "../hooks/useAuth";
 
 const nav__link = [
   {
@@ -25,6 +26,12 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   const toggleMenu = () => setOpen((open) => !open);
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
+  const profileActionRef = useRef(null);
+  const { currentUser } = useAuth();
+
+  const toggleProfileAction = () => {
+    profileActionRef.current.classList.toggle("header__show-user-action");
+  };
 
   return (
     <header className="header">
@@ -69,7 +76,28 @@ const Header = () => {
               <span className="header__badge">{totalQuantity}</span>
             </span>
             <div className="header__user">
-              <motion.img whileTap={{ scale: 1.2 }} src={user} alt="" />
+              <motion.img
+                whileTap={{ scale: 1.2 }}
+                src={currentUser ? currentUser.photoURL : user}
+                alt=""
+                onClick={toggleProfileAction}
+              />
+              <div
+                className="header__user-action"
+                ref={profileActionRef}
+                onClick={toggleProfileAction}
+              >
+                {currentUser ? (
+                  <>
+                    <span>LogOut</span>
+                  </>
+                ) : (
+                  <>
+                    <Link to="/signup">Signup</Link>
+                    <Link to="/login">Login</Link>
+                  </>
+                )}
+              </div>
             </div>
             <div className="mobile-menu">
               <span

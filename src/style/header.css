@@ -68,6 +68,29 @@
     height: 28px;
     border-radius: 50%;
     cursor: pointer;
+    position: relative;
+}
+
+.header__user-action {
+    position: absolute;
+    top: 120%;
+    right: 50%;
+    width: 100px;
+    padding: 8px;
+    background: var(--card-bg-01);
+    border: 1px solid var(--big-text);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: var(--big-text);
+    z-index: 10;
+    display: none;
+}
+
+.header__show-user-action {
+    display: flex;
 }
 
 .mobile-menu {

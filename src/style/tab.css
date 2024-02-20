@@ -1,0 +1,93 @@
+.tab {}
+
+.tab__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tab__select {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--big-text);
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.tab__active {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--big-text);
+    padding: 8px;
+    border-top: 1px solid var(--text);
+    border-left: 1px solid var(--text);
+    border-right: 1px solid var(--text);
+    border-bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.tab__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--big-text);
+}
+
+.tab__review {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tab__review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.tab__review-item {
+    padding: 4px 8px;
+    border-bottom: 1px solid var(--text);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.tab__review-name {
+    font-size: 14px;
+    color: var(--big-text);
+}
+
+.tab__review-rating {
+    font-size: 14px;
+    color: var(--accent);
+}
+
+.tab__review-text {
+    font-size: 16px;
+    color: var(--big-text);
+}
+
+
+@media (max-width: 600px) {
+
+    .tab__select {
+        font-size: 16px;
+    }
+
+    .tab__active {
+        font-size: 16px;
+    }
+
+    .tab__description {
+        font-size: 14px;
+    }
+
+    .tab__review-text {
+        font-size: 14px;
+    }
+
+}
