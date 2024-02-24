@@ -1,0 +1,91 @@
+.admin__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 0;
+    backdrop-filter: blur(5px);
+}
+
+.admin__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin__search {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.admin__icon-search {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--big-text);
+}
+
+.admin__input {
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    color: var(--big-text);
+    padding: 7px 20px;
+    border: 2px solid var(--card-bg-03);
+    background: transparent;
+    border-radius: 5px;
+}
+
+.admin__input::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--big-text);
+}
+
+.admin__icons {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.admin__icon i {
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--big-text);
+    cursor: pointer;
+}
+
+.admin__user {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    /* position: relative; */
+}
+
+
+.admin__menu {
+    margin-top: 73px;
+    background: var(--card-bg-01);
+}
+
+.admin__menu-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.admin__menu-item a {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--big-text);
+}
+
+.admin__active {
+    font-weight: 700 !important;
+    color: var(--accent) !important;
+}

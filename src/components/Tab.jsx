@@ -28,7 +28,7 @@ const Tab = ({
               className={`${tab === "tab__rev" ? "tab__active" : ""}`}
               onClick={() => setTab("tab__rev")}
             >
-              Reviews ({product.reviews.length})
+              Reviews ({product.reviews})
             </h6>
           </div>
           <div className="tab__result">

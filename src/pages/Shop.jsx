@@ -4,10 +4,12 @@ import Helmet from "../components/Helmet";
 import CommonSection from "../components/CommonSection";
 import ProductsList from "../components/ProductsList";
 import SelectSection from "../components/SelectSection";
-import products from "../assets/data/products";
+// import products from "../assets/data/products";
+import useGetDate from "../hooks/useGetDate";
 
 const Shop = () => {
-  const [productsData, setProductsData] = useState(products);
+  const { data: products, loading } = useGetDate("products");
+  const [productsData, setProductsData] = useState([]);
 
   const handleFilter = (e) => {
     const filterValue = e.target.value;
@@ -43,13 +45,17 @@ const Shop = () => {
     }
   };
 
-  const handleSearch = (e) => {
-    const searchTerm = e.target.value;
-    const searchedProducts = products.filter((item) =>
-      item.productName.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    setProductsData(searchedProducts);
-  };
+  // const handleSearch = (e) => {
+  //   const searchTerm = e.target.value;
+  //   const searchedProducts = products.filter((item) =>
+  //     item.productName.includes(searchTerm)
+  //   );
+  //   setProductsData(searchedProducts);
+  // };
+
+  useEffect(() => {
+    setProductsData(products);
+  }, [products]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -58,12 +64,12 @@ const Shop = () => {
   return (
     <Helmet title={"Shop"}>
       <CommonSection title="Products" />
-      <SelectSection handleFilter={handleFilter} handleSearch={handleSearch} />
+      <SelectSection handleFilter={handleFilter} />
 
       <section>
         <div className="container">
-          {productsData.length === 0 ? (
-            <h2 className="section__title">No products are found!</h2>
+          {loading ? (
+            <h3 className="section__title">Loading.....</h3>
           ) : (
             <ProductsList data={productsData} />
           )}

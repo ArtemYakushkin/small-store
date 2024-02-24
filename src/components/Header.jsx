@@ -2,10 +2,13 @@ import React, { useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
+import { signOut } from "firebase/auth";
+import { auth } from "../firebase.config";
 import "../style/header.css";
 import user from "../assets/images/user-icon.png";
 import MobileMenu from "./MobileMenu";
 import useAuth from "../hooks/useAuth";
+import { toast } from "react-toastify";
 
 const nav__link = [
   {
@@ -31,6 +34,16 @@ const Header = () => {
 
   const toggleProfileAction = () => {
     profileActionRef.current.classList.toggle("header__show-user-action");
+  };
+
+  const logout = () => {
+    signOut(auth)
+      .then(() => {
+        toast.success("Logged Out");
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      });
   };
 
   return (
@@ -75,13 +88,8 @@ const Header = () => {
               <i class="ri-shopping-bag-line"></i>
               <span className="header__badge">{totalQuantity}</span>
             </span>
-            <div className="header__user">
-              <motion.img
-                whileTap={{ scale: 1.2 }}
-                src={currentUser ? currentUser.photoURL : user}
-                alt=""
-                onClick={toggleProfileAction}
-              />
+            <div className="header__user" onClick={toggleProfileAction}>
+              <img src={currentUser ? currentUser.photoURL : user} alt="" />
               <div
                 className="header__user-action"
                 ref={profileActionRef}
@@ -89,12 +97,13 @@ const Header = () => {
               >
                 {currentUser ? (
                   <>
-                    <span>LogOut</span>
+                    <span onClick={logout}>LogOut</span>
                   </>
                 ) : (
                   <>
                     <Link to="/signup">Signup</Link>
                     <Link to="/login">Login</Link>
+                    <Link to="/dashboard">Dashboard</Link>
                   </>
                 )}
               </div>

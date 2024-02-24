@@ -98,7 +98,7 @@ const Signup = () => {
                 onChange={(e) => setPassword(e.target.value)}
               />
               <label className="auth__file" htmlFor="fileInput">
-                Add an avatar picture{" "}
+                Add an avatar picture
                 <span>
                   <i class="ri-file-add-line"></i>
                 </span>

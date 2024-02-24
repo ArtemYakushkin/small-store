@@ -15,31 +15,9 @@ const Characteristics = ({ product, addToCart }) => {
             <h2 className="characteristics__name section__title">
               {product.productName}
             </h2>
-            <div className="characteristics__rating">
-              <div className="characteristics__stars">
-                <span className="characteristics__stars-icon">
-                  <i class="ri-star-s-fill"></i>
-                </span>
-                <span className="characteristics__stars-icon">
-                  <i class="ri-star-s-fill"></i>
-                </span>
-                <span className="characteristics__stars-icon">
-                  <i class="ri-star-s-fill"></i>
-                </span>
-                <span className="characteristics__stars-icon">
-                  <i class="ri-star-s-fill"></i>
-                </span>
-                <span className="characteristics__stars-icon">
-                  <i class="ri-star-half-s-fill"></i>
-                </span>
-              </div>
-              <p className="characteristics__quantity">
-                ( <span>{product.avgRating}</span> ratings )
-              </p>
-            </div>
             <p className="characteristics__price">${product.price}</p>
             <p className="characteristics__category">
-              Category: <span>{product.category.toUpperCase()}</span>
+              Category: <span>{product.category}</span>
             </p>
             <p className="characteristics__short-text">{product.shortDesc}</p>
             <motion.button
@@ -51,6 +29,7 @@ const Characteristics = ({ product, addToCart }) => {
             </motion.button>
           </div>
         </div>
+        <p className="characteristics__description">{product.description}</p>
       </div>
     </section>
   );

@@ -8,9 +8,11 @@ import BestSales from "../components/BestSales";
 import TimerCount from "../components/TimerCount";
 import NewArrival from "../components/NewArrival";
 import PopularCategory from "../components/PopularCategory";
-import products from "../assets/data/products";
+import useGetDate from "../hooks/useGetDate";
 
 const Home = () => {
+  const { data: products, loading } = useGetDate("products");
+
   const [trendingProducts, setTrendingProducts] = useState([]);
   const [bestSalesProducts, setBestSalesProducts] = useState([]);
   const [mobileProducts, setMobileProducts] = useState([]);
@@ -39,7 +41,7 @@ const Home = () => {
     setMobileProducts(filterdMobileProducts);
     setWirelessProducts(filterdWirelessProducts);
     setPopularProducts(filterdPopularProducts);
-  }, []);
+  }, [products]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -49,11 +51,28 @@ const Home = () => {
     <Helmet title={"Home"}>
       <Hero />
       <Services />
-      <TrendingProducts data={trendingProducts} />
-      <BestSales data={bestSalesProducts} />
+      {loading ? (
+        <h3 className="section__title">Loading.....</h3>
+      ) : (
+        <TrendingProducts data={trendingProducts} />
+      )}
+      {loading ? (
+        <h3 className="section__title">Loading.....</h3>
+      ) : (
+        <BestSales data={bestSalesProducts} />
+      )}
+
       <TimerCount />
-      <NewArrival data={mobileProducts} data2={wirelessProducts} />
-      <PopularCategory data={popularProducts} />
+      {loading ? (
+        <h3 className="section__title">Loading.....</h3>
+      ) : (
+        <NewArrival data={mobileProducts} data2={wirelessProducts} />
+      )}
+      {loading ? (
+        <h3 className="section__title">Loading.....</h3>
+      ) : (
+        <PopularCategory data={popularProducts} />
+      )}
     </Helmet>
   );
 };

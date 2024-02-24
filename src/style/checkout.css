@@ -47,7 +47,7 @@
 .checkout__input::placeholder {
     font-size: 14px;
     font-weight: 600;
-    color: var(--big-text);
+    color: var(--half-white);
 }
 
 .checkout__total-box {

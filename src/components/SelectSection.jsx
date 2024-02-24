@@ -26,7 +26,7 @@ const SelectSection = ({ handleFilter, handleSearch }) => {
                 Wireless
               </option>
             </select>
-            <select className="filter__select">
+            {/* <select className="filter__select">
               <option className="filter__option">Sort By</option>
               <option className="filter__option" value="ascending">
                 Ascending
@@ -34,9 +34,9 @@ const SelectSection = ({ handleFilter, handleSearch }) => {
               <option className="filter__option" value="descending">
                 Descending
               </option>
-            </select>
+            </select> */}
           </div>
-          <div className="filter__search">
+          {/* <div className="filter__search">
             <span className="filter__icon">
               <i class="ri-search-line"></i>
             </span>
@@ -46,7 +46,7 @@ const SelectSection = ({ handleFilter, handleSearch }) => {
               placeholder="Search..."
               onChange={handleSearch}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
