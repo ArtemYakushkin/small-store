@@ -31,16 +31,16 @@ const Footer = () => {
               <h4 className="footer__quick-title">Top Categories</h4>
               <ul className="footer__list">
                 <li className="footer__item">
-                  <Link to="#">Mobile Phones</Link>
+                  <a href="#trending">Trending</a>
                 </li>
                 <li className="footer__item">
-                  <Link to="#">Modern Sofa</Link>
+                  <a href="#best">Best Sales</a>
                 </li>
                 <li className="footer__item">
-                  <Link to="#">Arm Chair</Link>
+                  <a href="#arrival">New Arrivals</a>
                 </li>
                 <li className="footer__item">
-                  <Link to="#">Smart Watches</Link>
+                  <a href="#popular">Popular</a>
                 </li>
               </ul>
             </div>

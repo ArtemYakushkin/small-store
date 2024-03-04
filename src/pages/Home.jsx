@@ -27,13 +27,13 @@ const Home = () => {
       (item) => item.category === "sofa"
     );
     const filterdMobileProducts = products.filter(
-      (item) => item.category === "mobile"
+      (item) => item.category === "armchair"
     );
     const filterdWirelessProducts = products.filter(
-      (item) => item.category === "wireless"
+      (item) => item.category === "bed"
     );
     const filterdPopularProducts = products.filter(
-      (item) => item.category === "watch"
+      (item) => item.category === "table"
     );
 
     setTrendingProducts(filterdTrendingProducts);

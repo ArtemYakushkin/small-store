@@ -16,14 +16,14 @@ const SelectSection = ({ handleFilter, handleSearch }) => {
               <option className="filter__option" value="chair">
                 Chair
               </option>
-              <option className="filter__option" value="mobile">
-                Mobile
+              <option className="filter__option" value="armchair">
+                Armchair
               </option>
-              <option className="filter__option" value="watch">
-                Watch
+              <option className="filter__option" value="bed">
+                Bed
               </option>
-              <option className="filter__option" value="wireless">
-                Wireless
+              <option className="filter__option" value="table">
+                Table
               </option>
             </select>
             {/* <select className="filter__select">

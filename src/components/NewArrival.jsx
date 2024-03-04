@@ -4,9 +4,12 @@ import ProductsList from "./ProductsList";
 
 const NewArrival = ({ data, data2 }) => {
   return (
-    <section className="arrival">
+    <section className="arrival" id="arrival">
       <div className="container">
-        <h2 className="section__title">New Arrivals</h2>
+        <div className="subtitle-box" style={{ marginBottom: "30px" }}>
+          <span className="subtitle-line"></span>
+          <p className="subtitle">New Arrivals</p>
+        </div>
         <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
           <ProductsList data={data} />
           <ProductsList data={data2} />

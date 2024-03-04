@@ -16,49 +16,45 @@ const Checkout = () => {
         <div className="container">
           <div className="checkout__wrapper">
             <div className="checkout__form-box">
-              <div className="checkout__form-title-box">
-                <span className="checkout__line"></span>
-                <h6 className="checkout__form-title">Billing Information</h6>
+              <div className="subtitle-box" style={{ marginBottom: "20px" }}>
+                <span className="subtitle-line"></span>
+                <p className="subtitle">Billing Information</p>
               </div>
               <form className="checkout__form">
                 <input
-                  className="checkout__input"
+                  className="form-input"
                   type="text"
                   placeholder="Enter your name"
                 />
 
                 <input
-                  className="checkout__input"
+                  className="form-input"
                   type="email"
                   placeholder="Enter your email"
                 />
 
                 <input
-                  className="checkout__input"
+                  className="form-input"
                   type="number"
                   placeholder="Phone number"
                 />
 
                 <input
-                  className="checkout__input"
+                  className="form-input"
                   type="text"
                   placeholder="Street address"
                 />
 
-                <input
-                  className="checkout__input"
-                  type="text"
-                  placeholder="City"
-                />
+                <input className="form-input" type="text" placeholder="City" />
 
                 <input
-                  className="checkout__input"
+                  className="form-input"
                   type="text"
                   placeholder="Postal code"
                 />
 
                 <input
-                  className="checkout__input"
+                  className="form-input"
                   type="text"
                   placeholder="Country"
                 />

@@ -4,9 +4,12 @@ import ProductsList from "./ProductsList";
 
 const PopularCategory = ({ data }) => {
   return (
-    <section className="sales">
+    <section className="sales" id="popular">
       <div className="container">
-        <h2 className="section__title">Popular in Category</h2>
+        <div className="subtitle-box" style={{ marginBottom: "30px" }}>
+          <span className="subtitle-line"></span>
+          <p className="subtitle">Popular in Category</p>
+        </div>
         <ProductsList data={data} />
       </div>
     </section>

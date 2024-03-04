@@ -9,6 +9,7 @@ import { storage } from "../firebase.config";
 import { db } from "../firebase.config";
 
 import Helmet from "../components/Helmet";
+import Loader from "../components/Loader";
 import "../style/auth.css";
 
 const Signup = () => {
@@ -72,32 +73,40 @@ const Signup = () => {
       <section className="auth">
         <div className="container">
           {loading ? (
-            <h3 className="section__title">Loading.....</h3>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <Loader />
+            </div>
           ) : (
             <form className="auth__form" onSubmit={signup}>
-              <h3 className="auth__title section__title">Signup</h3>
+              <div
+                className="subtitle-box"
+                style={{ marginLeft: "auto", marginRight: "auto" }}
+              >
+                <span className="subtitle-line"></span>
+                <p className="subtitle">Signup</p>
+              </div>
               <input
-                className="auth__input"
+                className="form-input"
                 type="text"
                 placeholder="Enter your name"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
               <input
-                className="auth__input"
+                className="form-input"
                 type="email"
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
               <input
-                className="auth__input"
+                className="form-input"
                 type="password"
                 placeholder="Enter your password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <label className="auth__file" htmlFor="fileInput">
+              <label className="form__file" htmlFor="fileInput">
                 Add an avatar picture
                 <span>
                   <i class="ri-file-add-line"></i>

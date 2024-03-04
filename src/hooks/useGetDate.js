@@ -17,7 +17,7 @@ const useGetDate = (collectionName) => {
 
         }
         getData();
-     }, []);
+     }, [collectionRef]);
 
     return {data, loading};
 };

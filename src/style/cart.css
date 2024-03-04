@@ -7,43 +7,6 @@
     width: 75%;
 }
 
-table {
-    width: 100%;
-}
-
-table thead {
-    border-bottom: 3px solid var(--text);
-}
-
-table tr th {
-    padding: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--big-text);
-    text-align: center;
-}
-
-table tr {
-    border-bottom: 1px solid var(--text);
-}
-
-table tr td img {
-    width: 70px;
-    height: 70px;
-}
-
-table tr td {
-    font-size: 14px;
-    font-weight: 300;
-    color: var(--big-text);
-    text-align: center;
-}
-
-td i {
-    color: var(--accent);
-    cursor: pointer;
-}
-
 .cart__total {
     width: 25%;
     padding: 0 20px;
@@ -60,19 +23,24 @@ td i {
 .cart__total-title {
     font-size: 16px;
     font-weight: 500;
-    color: var(--big-text);
+    color: var(--text-color);
 }
 
 .cart__total-price {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 600;
-    color: var(--big-text);
+    color: var(--text-color);
+}
+
+.cart__total-price span {
+    font-size: 20px;
+    color: var(--accent-color);
 }
 
 .cart__total-atention-text {
     font-size: 12px;
     font-weight: 300;
-    color: var(--text);
+    color: var(--gray-color);
     margin-bottom: 40px;
 }
 

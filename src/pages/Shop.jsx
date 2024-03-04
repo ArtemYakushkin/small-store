@@ -19,9 +19,9 @@ const Shop = () => {
       );
       setProductsData(filteredProducts);
     }
-    if (filterValue === "mobile") {
+    if (filterValue === "armchair") {
       const filteredProducts = products.filter(
-        (item) => item.category === "mobile"
+        (item) => item.category === "armchair"
       );
       setProductsData(filteredProducts);
     }
@@ -31,15 +31,15 @@ const Shop = () => {
       );
       setProductsData(filteredProducts);
     }
-    if (filterValue === "watch") {
+    if (filterValue === "bed") {
       const filteredProducts = products.filter(
-        (item) => item.category === "watch"
+        (item) => item.category === "bed"
       );
       setProductsData(filteredProducts);
     }
-    if (filterValue === "wireless") {
+    if (filterValue === "table") {
       const filteredProducts = products.filter(
-        (item) => item.category === "wireless"
+        (item) => item.category === "table"
       );
       setProductsData(filteredProducts);
     }
@@ -54,18 +54,17 @@ const Shop = () => {
   // };
 
   useEffect(() => {
-    setProductsData(products);
-  }, [products]);
-
-  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useEffect(() => {
+    setProductsData(products);
+  }, [products]);
 
   return (
     <Helmet title={"Shop"}>
       <CommonSection title="Products" />
       <SelectSection handleFilter={handleFilter} />
-
       <section>
         <div className="container">
           {loading ? (

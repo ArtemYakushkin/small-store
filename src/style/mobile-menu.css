@@ -10,11 +10,12 @@
     right: 0;
     width: 250px;
     height: 100vh;
-    background: var(--background);
+    background: var(--bg-color);
     z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: inset 15px 0px 38px 7px rgba(44, 44, 44, 1);
 }
 
 .mobile__list {
@@ -27,10 +28,10 @@
 .mobile__item a {
     font-size: 16px;
     font-weight: 400;
-    color: var(--big-text);
+    color: var(--text-color);
 }
 
 .menu__active {
     font-weight: 700 !important;
-    color: var(--accent) !important;
+    color: var(--accent-color) !important;
 }

@@ -5,6 +5,7 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { addDoc, collection, setDoc } from "firebase/firestore";
 import { db, storage } from "../firebase.config";
 
+import Loader from "../components/Loader";
 import "../style/add-product.css";
 
 const AddProducts = () => {
@@ -70,20 +71,22 @@ const AddProducts = () => {
       <div className="container">
         <div className="add__wrapper">
           {loading ? (
-            <h3 className="section__title">Loading.....</h3>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <Loader />
+            </div>
           ) : (
             <>
-              <div className="add__form-title-box">
-                <span className="add__line"></span>
-                <h6 className="add__form-title">Billing Information</h6>
+              <div className="subtitle-box" style={{ marginBottom: "30px" }}>
+                <span className="subtitle-line"></span>
+                <p className="subtitle">Billing Information</p>
               </div>
               <form className="add__form" onSubmit={addProduct}>
                 <div className="add__form-group">
                   <p className="add__form-text">Product Title</p>
                   <input
-                    className="add__form-input"
+                    className="form-input"
                     type="text"
-                    placeholder="Double Sofa"
+                    placeholder="Enter Title"
                     value={enterTitle}
                     onChange={(e) => setEnterTitle(e.target.value)}
                     required
@@ -92,9 +95,9 @@ const AddProducts = () => {
                 <div className="add__form-group">
                   <p className="add__form-text">Short Description</p>
                   <input
-                    className="add__form-input"
+                    className="form-input"
                     type="text"
-                    placeholder="lorem...."
+                    placeholder="Enter Short Desc"
                     value={enterShortDesc}
                     onChange={(e) => setEnterShortDesc(e.target.value)}
                     required
@@ -103,9 +106,9 @@ const AddProducts = () => {
                 <div className="add__form-group">
                   <p className="add__form-text">Description</p>
                   <input
-                    className="add__form-input"
+                    className="form-input"
                     type="text"
-                    placeholder="Description...."
+                    placeholder="Enter Description"
                     value={enterDescription}
                     onChange={(e) => setEnterDescription(e.target.value)}
                     required
@@ -115,9 +118,9 @@ const AddProducts = () => {
                   <div className="add__form-group">
                     <p className="add__form-text">Price</p>
                     <input
-                      className="add__form-input"
+                      className="form-input"
                       type="text"
-                      placeholder="$100"
+                      placeholder="Enter Price"
                       value={enterPrice}
                       onChange={(e) => setEnterPrice(e.target.value)}
                       required
@@ -137,20 +140,20 @@ const AddProducts = () => {
                       <option className="add__form-option" value="chair">
                         Chair
                       </option>
-                      <option className="add__form-option" value="mobile">
-                        Mobile
+                      <option className="add__form-option" value="armchair">
+                        Armchair
                       </option>
-                      <option className="add__form-option" value="watch">
-                        Watch
+                      <option className="add__form-option" value="bed">
+                        Bed
                       </option>
-                      <option className="add__form-option" value="wireless">
-                        Wireless
+                      <option className="add__form-option" value="table">
+                        Table
                       </option>
                     </select>
                   </div>
                 </div>
                 <div className="add__form-group">
-                  <label className="add__form-file" htmlFor="fileInputAdd">
+                  <label className="form__file" htmlFor="fileInputAdd">
                     Add product image
                     <span>
                       <i class="ri-file-add-line"></i>

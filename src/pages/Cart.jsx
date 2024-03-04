@@ -22,7 +22,7 @@ const Cart = () => {
         <div className="container">
           <div className="cart__wrapper">
             {cartItems.length === 0 ? (
-              <h2 className="section__title">No item added to the cart</h2>
+              <h2 className="no-product-title">No item added to the cart</h2>
             ) : (
               <>
                 <div className="cart__list">
@@ -46,7 +46,9 @@ const Cart = () => {
                 <div className="cart__total">
                   <div className="cart__total-box">
                     <h6 className="cart__total-title">Subtotal</h6>
-                    <p className="cart__total-price">${totalAmount}</p>
+                    <p className="cart__total-price">
+                      {totalAmount} <span>$</span>
+                    </p>
                   </div>
                   <p className="cart__total-atention-text">
                     Taxes and shipping will calculate in checkout

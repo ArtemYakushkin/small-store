@@ -1,0 +1,29 @@
+.all__search {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.all__icon-search {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+
+    .all__search {
+        width: 75%;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .all__search {
+        width: 100%;
+    }
+
+}

@@ -1,5 +1,5 @@
 .timer {
-    background-image: linear-gradient(285deg, rgba(7, 87, 91, 0.6783088235294117) 32%, rgba(0, 59, 70, 0.958420868347339) 68%), url(../assets/images/clock-bg.jpg);
+    background-image: linear-gradient(180deg, rgba(32, 32, 32, 0.8) 5%, rgba(7, 7, 7, 0.9) 50%, rgba(13, 13, 13, 1) 95%), url(../assets/img/clock-bg.jpg);
     background-position: center 73%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,32 +7,6 @@
 
 .clock__top-content {
     margin-bottom: 20px;
-}
-
-.clock__subtitle-box {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.clock__line {
-    display: block;
-    width: 60px;
-    height: 2px;
-    background: var(--accent);
-}
-
-.clock__subtitle {
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    color: var(--big-text);
-}
-
-.clock__title {
-    font-size: 28px;
-    font-weight: 600;
-    color: var(--big-text);
 }
 
 .clock__wrapper {
@@ -56,18 +30,18 @@
 .clock__number {
     font-size: 28px;
     font-weight: 700;
-    color: var(--big-text);
+    color: var(--text-color);
 }
 
 .clock__leter {
     font-size: 12px;
-    color: var(--big-text);
+    color: var(--text-color);
 }
 
 .clock__dots {
     font-size: 28px;
     font-weight: 700;
-    color: var(--big-text);
+    color: var(--text-color);
 }
 
 .clock__btn {

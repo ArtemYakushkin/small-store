@@ -5,6 +5,7 @@ import { auth } from "../firebase.config";
 import { toast } from "react-toastify";
 
 import Helmet from "../components/Helmet";
+import Loader from "../components/Loader";
 import "../style/auth.css";
 
 const Login = () => {
@@ -40,19 +41,27 @@ const Login = () => {
       <section className="auth">
         <div className="container">
           {loading ? (
-            <h3 className="section__title">Loading.....</h3>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <Loader />
+            </div>
           ) : (
             <form className="auth__form" onSubmit={signin}>
-              <h3 className="auth__title section__title">Login</h3>
+              <div
+                className="subtitle-box"
+                style={{ marginLeft: "auto", marginRight: "auto" }}
+              >
+                <span className="subtitle-line"></span>
+                <p className="subtitle">Login</p>
+              </div>
               <input
-                className="auth__input"
+                className="form-input"
                 type="email"
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
               <input
-                className="auth__input"
+                className="form-input"
                 type="password"
                 placeholder="Enter your password"
                 value={password}

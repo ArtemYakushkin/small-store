@@ -43,11 +43,10 @@ const TimerCount = () => {
     <section className="timer">
       <div className="container">
         <div className="clock__top-content">
-          <div className="clock__subtitle-box">
-            <span className="clock__line"></span>
-            <p className="clock__subtitle">Limited Offers</p>
+          <div className="subtitle-box" style={{ marginBottom: "30px" }}>
+            <span className="subtitle-line"></span>
+            <p className="subtitle">Limited Offers</p>
           </div>
-          <h3 className="clock__title">Quality Armchair</h3>
         </div>
         <div className="clock__wrapper">
           <div className="clock__data">

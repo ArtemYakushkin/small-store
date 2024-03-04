@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import "../style/hero.css";
-import heroImg from "../assets/images/hero-img.png";
+import heroImg from "../assets/img/hero-img.png";
 
 const Hero = () => {
   return (
@@ -11,9 +11,9 @@ const Hero = () => {
       <div className="container">
         <div className="hero__wrapper">
           <div className="hero__content">
-            <div className="hero__subtitle-box">
-              <span className="hero__line"></span>
-              <p className="hero__subtitle">Trending product in 2024</p>
+            <div className="subtitle-box">
+              <span className="subtitle-line"></span>
+              <p className="subtitle">Trending product in 2024</p>
             </div>
             <h2 className="hero__title">
               Make Your Interior More Minimalistic & Modern

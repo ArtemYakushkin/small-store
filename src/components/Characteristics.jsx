@@ -12,10 +12,10 @@ const Characteristics = ({ product, addToCart }) => {
             <img src={product.imgUrl} alt="" />
           </div>
           <div className="characteristics__info">
-            <h2 className="characteristics__name section__title">
-              {product.productName}
-            </h2>
-            <p className="characteristics__price">${product.price}</p>
+            <h2 className="characteristics__name">{product.productName}</h2>
+            <p className="characteristics__price">
+              {product.price} <span>$</span>
+            </p>
             <p className="characteristics__category">
               Category: <span>{product.category}</span>
             </p>

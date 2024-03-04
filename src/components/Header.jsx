@@ -1,11 +1,10 @@
 import React, { useRef, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { motion } from "framer-motion";
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase.config";
 import "../style/header.css";
-import user from "../assets/images/user-icon.png";
+import user from "../assets/img/no-user.jpg";
 import MobileMenu from "./MobileMenu";
 import useAuth from "../hooks/useAuth";
 import { toast } from "react-toastify";
@@ -31,6 +30,7 @@ const Header = () => {
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
   const profileActionRef = useRef(null);
   const { currentUser } = useAuth();
+  const navigate = useNavigate();
 
   const toggleProfileAction = () => {
     profileActionRef.current.classList.toggle("header__show-user-action");
@@ -40,6 +40,7 @@ const Header = () => {
     signOut(auth)
       .then(() => {
         toast.success("Logged Out");
+        navigate("/login");
       })
       .catch((error) => {
         toast.error(error.message);
@@ -81,15 +82,14 @@ const Header = () => {
 
           <div className="header__icons">
             <span className="header__icon">
-              <i class="ri-heart-line"></i>
-              <span className="header__badge">0</span>
-            </span>
-            <span className="header__icon">
               <i class="ri-shopping-bag-line"></i>
               <span className="header__badge">{totalQuantity}</span>
             </span>
-            <div className="header__user" onClick={toggleProfileAction}>
+            <div className="header__user">
               <img src={currentUser ? currentUser.photoURL : user} alt="" />
+            </div>
+            <div className="header__arrow" onClick={toggleProfileAction}>
+              <i class="ri-arrow-down-s-fill"></i>
               <div
                 className="header__user-action"
                 ref={profileActionRef}
@@ -97,13 +97,21 @@ const Header = () => {
               >
                 {currentUser ? (
                   <>
-                    <span onClick={logout}>LogOut</span>
+                    <span className="header__user-action-item" onClick={logout}>
+                      LogOut
+                    </span>
                   </>
                 ) : (
                   <>
-                    <Link to="/signup">Signup</Link>
-                    <Link to="/login">Login</Link>
-                    <Link to="/dashboard">Dashboard</Link>
+                    <Link className="header__user-action-item" to="/signup">
+                      Signup
+                    </Link>
+                    <Link className="header__user-action-item" to="/login">
+                      Login
+                    </Link>
+                    <Link className="header__user-action-item" to="/dashboard">
+                      Dashboard
+                    </Link>
                   </>
                 )}
               </div>

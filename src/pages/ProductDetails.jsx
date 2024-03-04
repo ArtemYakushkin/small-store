@@ -20,6 +20,10 @@ const ProductDetails = () => {
   const docRef = doc(db, "products", id);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const getProduct = async () => {
       const docSnap = await getDoc(docRef);
       if (docSnap.exists()) {
@@ -73,7 +77,7 @@ const ProductDetails = () => {
 
   // useEffect(() => {
   //   window.scrollTo(0, 0);
-  // }, [product]);
+  // }, []);
 
   return (
     <Helmet title={productName}>
@@ -81,7 +85,10 @@ const ProductDetails = () => {
       <Characteristics product={product} addToCart={addToCart} />
       <section>
         <div className="container">
-          <h2 className="section__title">You might also like</h2>
+          <div className="subtitle-box" style={{ marginBottom: "30px" }}>
+            <span className="subtitle-line"></span>
+            <p className="subtitle">You might also like</p>
+          </div>
           <ProductsList data={relatedProducts} />
         </div>
       </section>

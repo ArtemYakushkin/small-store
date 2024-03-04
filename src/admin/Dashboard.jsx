@@ -12,19 +12,31 @@ const Dashboard = () => {
       <div className="container">
         <div className="dashboard__wrapper">
           <div className="dashboard__item">
-            <p className="dashboard__title">Total Sales</p>
+            <div className="subtitle-box">
+              <span className="subtitle-line"></span>
+              <p className="subtitle">Total Sales</p>
+            </div>
             <span className="dashboard__number">$7890</span>
           </div>
           <div className="dashboard__item">
-            <p className="dashboard__title">Orders</p>
+            <div className="subtitle-box">
+              <span className="subtitle-line"></span>
+              <p className="subtitle">Orders</p>
+            </div>
             <span className="dashboard__number">789</span>
           </div>
           <div className="dashboard__item">
-            <p className="dashboard__title">Total Products</p>
+            <div className="subtitle-box">
+              <span className="subtitle-line"></span>
+              <p className="subtitle">Total Products</p>
+            </div>
             <span className="dashboard__number">{products.length}</span>
           </div>
           <div className="dashboard__item">
-            <p className="dashboard__title">Total Users</p>
+            <div className="subtitle-box">
+              <span className="subtitle-line"></span>
+              <p className="subtitle">Total Users</p>
+            </div>
             <span className="dashboard__number">{users.length}</span>
           </div>
         </div>

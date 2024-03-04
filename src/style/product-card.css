@@ -1,59 +1,81 @@
 .product__item {
+    position: relative;
     max-width: 294px;
-    padding: 10px 10px 20px 10px;
+    padding: 20px 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border: 1px solid var(--big-text);
-    border-radius: 24px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    box-shadow: inset 0px 0px 5px 0px rgba(44, 44, 44, 1);
+    overflow: hidden;
 }
 
-.product__top {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.product__item:before {
+    position: absolute;
+    background: var(--bg-color);
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    margin: -25px;
+    border-radius: 50%;
+    content: '';
+    box-shadow: 0px 0px 5px 0px rgba(44, 44, 44, 1);
+    z-index: 2;
+}
+
+.product__img {
+    margin-bottom: 20px;
 }
 
 .product__name {
-    text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
-    color: var(--big-text);
+    color: var(--text-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+    margin-bottom: 12px;
 }
 
 .product__category {
-    text-align: center;
-    font-size: 12px;
-    color: var(--text);
-}
-
-.product__bottom {
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    font-size: 14px;
+    color: var(--text-color);
 }
 
 .product__price {
     font-size: 28px;
     font-weight: 600;
-    color: var(--big-text);
+    color: var(--text-color);
+}
+
+.product__price span {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--accent-color);
 }
 
 .product__add {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    background: var(--accent);
+    background: var(--accent-color);
     cursor: pointer;
+    z-index: 3;
 }
 
 .product__add i {
     font-size: 20px;
     font-weight: 600;
     line-height: 20px;
-    color: var(--big-text);
+    color: var(--text-color);
 }

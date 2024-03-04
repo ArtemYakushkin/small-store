@@ -1,28 +1,48 @@
 import React from "react";
 
 import "../style/services.css";
-import serviceData from "../assets/data/serviceData";
 
 const Services = () => {
   return (
     <section className="services">
       <div className="container">
         <ul className="services__list">
-          {serviceData.map((item, index) => (
-            <li
-              className="services__item"
-              style={{ background: `${item.bg}` }}
-              key={index}
-            >
-              <span className="services__icon">
-                <i class={item.icon}></i>
-              </span>
-              <div className="services__info">
-                <h3 className="services__item-title">{item.title}</h3>
-                <p className="services__item-text">{item.subtitle}</p>
-              </div>
-            </li>
-          ))}
+          <li className="services__item">
+            <span className="services__icon">
+              <i class="ri-truck-line"></i>
+            </span>
+            <div className="services__info">
+              <h3 className="services__item-title">Free Shipping</h3>
+              <p className="services__item-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </li>
+          <li className="services__item">
+            <span className="services__icon">
+              <i class="ri-refresh-line"></i>
+            </span>
+            <div className="services__info">
+              <h3 className="services__item-title">Easy Returns</h3>
+              <p className="services__item-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </li>
+          <li className="services__item">
+            <span className="services__icon">
+              <i class="ri-secure-payment-line"></i>
+            </span>
+            <div className="services__info">
+              <h3 className="services__item-title">Secure Payment</h3>
+              <p className="services__item-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </li>
+          <li className="services__item">
+            <span className="services__icon">
+              <i class="ri-exchange-dollar-line"></i>
+            </span>
+            <div className="services__info">
+              <h3 className="services__item-title">Back Guarantee</h3>
+              <p className="services__item-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </li>
         </ul>
       </div>
     </section>

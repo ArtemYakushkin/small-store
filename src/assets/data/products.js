@@ -183,28 +183,28 @@ const products = [
     ],
     avgRating: 4.7,
   },
-  {
-    id: "07",
-    productName: "Sakarias Armchair",
-    imgUrl: productImg07,
-    category: "chair",
-    price: 99,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
-  },
+  // {
+  //   id: "07",
+  //   productName: "Sakarias Armchair",
+  //   imgUrl: productImg07,
+  //   category: "chair",
+  //   price: 99,
+  //   shortDesc:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  //   reviews: [
+  //     {
+  //       rating: 4.6,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //     {
+  //       rating: 4.9,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  //   avgRating: 4.7,
+  // },
 
   {
     id: "27",
@@ -229,51 +229,51 @@ const products = [
     avgRating: 4.7,
   },
 
-  {
-    id: "08",
-    productName: "Baltsar Chair",
-    imgUrl: productImg08,
-    category: "chair",
-    price: 89,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
-  },
+  // {
+  //   id: "08",
+  //   productName: "Baltsar Chair",
+  //   imgUrl: productImg08,
+  //   category: "chair",
+  //   price: 89,
+  //   shortDesc:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  //   reviews: [
+  //     {
+  //       rating: 4.6,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //     {
+  //       rating: 4.9,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  //   avgRating: 4.7,
+  // },
 
-  {
-    id: "09",
-    productName: "Helmar Chair",
-    imgUrl: productImg09,
-    category: "chair",
-    price: 112,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
-  },
+  // {
+  //   id: "09",
+  //   productName: "Helmar Chair",
+  //   imgUrl: productImg09,
+  //   category: "chair",
+  //   price: 112,
+  //   shortDesc:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  //   reviews: [
+  //     {
+  //       rating: 4.6,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //     {
+  //       rating: 4.9,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  //   avgRating: 4.7,
+  // },
 
   {
     id: "10",
@@ -297,28 +297,28 @@ const products = [
     ],
     avgRating: 4.8,
   },
-  {
-    id: "25",
-    productName: "Sakarias Armchair",
-    imgUrl: productImg10,
-    category: "chair",
-    price: 99,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
-  },
+  // {
+  //   id: "25",
+  //   productName: "Sakarias Armchair",
+  //   imgUrl: productImg10,
+  //   category: "chair",
+  //   price: 99,
+  //   shortDesc:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  //   reviews: [
+  //     {
+  //       rating: 4.6,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //     {
+  //       rating: 4.9,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  //   avgRating: 4.7,
+  // },
   {
     id: "11",
     productName: "Apple iPhone 12 Max",
